@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CURATORS 채용 – 지금은 생존 모드입니다</title>
+  <meta name="description" content="큐레이터스는 생존형 D2C 브랜드를 만드는 팀입니다. 안정이 아닌 진행형. 끝까지 실행하며 곡선을 다시 그릴 동료를 찾습니다." />
+  <meta property="og:title" content="CURATORS 채용 – 지금은 생존 모드입니다" />
+  <meta property="og:description" content="큐레이터스는 생존형 D2C 브랜드를 만드는 팀입니다. 안정이 아닌 진행형. 끝까지 실행하며 곡선을 다시 그릴 동료를 찾습니다." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#111827" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .shadow-soft { box-shadow: 0 10px 30px rgba(0,0,0,.04); }
+    .card { border-radius: 1rem; border:1px solid rgba(17,24,39,.06); background:#fff; }
+
+    /* 생존 모드 깜빡임 */
+    @keyframes pulse-red {
+      0%, 100% { background-color:#ef4444; box-shadow:0 0 0 0 rgba(239,68,68,.55); }
+      50%      { background-color:#f87171; box-shadow:0 0 8px 4px rgba(239,68,68,.28); }
+    }
+    .pulse-light { animation:pulse-red 1s infinite; }
+    @media (prefers-reduced-motion: reduce) {
+      .pulse-light { animation:none; background-color:#ef4444; box-shadow:none; }
+    }
+
+    /* 🔸 탭 활성 상태 스타일 */
+    .nav-link[data-active="true"] {
+      font-weight: 600;
+      color: black;
+      position: relative;
+    }
+    .nav-link[data-active="true"]::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 2px;
+      background-color: black;
+      border-radius: 1px;
+    }
+
+    /* 🔸 페이지 페이드 효과 */
+    body {
+      opacity: 0;
+      transition: opacity 0.4s ease-in-out;
+    }
+    body.loaded {
+      opacity: 1;
+    }
+    .fade-out {
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen bg-white text-gray-900 antialiased break-keep scale-[0.95] origin-top">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
+    <div class="mx-auto max-w-[72rem] px-4 py-2.5 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="h-7 w-7 rounded-xl bg-black"></div>
+        <span class="font-bold tracking-tight text-[15px]">CURATORS</span>
+      </div>
+
+      <!-- 🔗 Navigation -->
+      <nav class="hidden md:flex items-center gap-6 text-[13px]">
+        <a href="#values" class="nav-link hover:opacity-80">문화</a>
+        <a href="https://curators.career.greetinghr.com/ko/brand" class="nav-link hover:opacity-80" target="_blank" data-tab="brand">Brand</a>
+        <a href="https://curators.career.greetinghr.com/ko/culture" class="nav-link hover:opacity-80" target="_blank" data-tab="culture">Culture</a>
+        <a href="https://curators.career.greetinghr.com/ko/guide1" class="nav-link hover:opacity-80" target="_blank" data-tab="guide">Guide</a>
+        <a href="https://curators.career.greetinghr.com/ko/recruit" class="nav-link hover:opacity-80" target="_blank" data-tab="recruit">Recruit</a>
+      </nav>
+
+      <a href="https://curators.career.greetinghr.com/ko/recruit" 
+         target="_blank"
+         class="inline-flex items-center justify-center px-3.5 h-9 rounded-2xl bg-black text-white text-[12px] font-medium transition-all hover:bg-gray-800">
+         지금 지원하기
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-gray-50 via-white to-white"></div>
+
+    <div class="mx-auto max-w-[72rem] px-4 pt-8 md:pt-10 pb-10 md:pb-12 grid md:grid-cols-12 gap-7 items-start">
+      <!-- LEFT -->
+      <div class="md:col-span-8">
+        <div class="inline-flex items-center gap-2 rounded-full border px-2.5 py-0.5 text-[10px] tracking-tight whitespace-nowrap w-fit">
+          <span class="inline-flex h-2 w-2 rounded-full pulse-light"></span>
+          지금은 생존 모드입니다
+        </div>
+
+        <h1 class="mt-3 text-[26px] sm:text-[30px] lg:text-[34px] font-extrabold leading-snug">
+          우리는 아직 완성되지 않았습니다.<br class="hidden sm:block">
+          매일 흔들리지만, 생존을 넘어
+          <span class="underline decoration-4 decoration-black underline-offset-4 whitespace-nowrap">새로운 성장 곡선</span>을 그리고 있습니다.
+        </h1>
+
+        <p class="mt-3 text-[15px] text-gray-700 leading-relaxed">
+          안정은 없지만 <span class="font-medium">실전의 자리</span>는 분명합니다.  
+          답을 직접 만드는 동료를 기다립니다.
+        </p>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="md:col-span-4 w-full">
+        <div class="aspect-[16/9] overflow-hidden rounded-2xl shadow-soft">
+          <img src="https://opening-attachments.greetinghr.com/2025-03-19/23aee327-b46f-4a1e-8ce1-61d22aa55689/%282%29.jpg"
+               alt="이츠스포츠" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section id="values" class="mx-auto max-w-[72rem] px-4 py-8">
+    <div class="rounded-2xl border bg-gray-50 p-6 md:p-7">
+      <h3 class="text-[18px] md:text-[20px] font-extrabold">우리가 원하는 동료</h3>
+      <p class="mt-1.5 text-[13px] text-gray-600">함께 끝까지 실행하는 동료를 찾습니다.</p>
+
+      <div class="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <div class="card p-4 text-[13px]">화려함보다 진심으로 실행하는 사람</div>
+        <div class="card p-4 text-[13px]">결과를 끝까지 완성하는 책임감</div>
+        <div class="card p-4 text-[13px]">문제를 외면하지 않고 스스로 해법을 찾는 사람</div>
+        <div class="card p-4 text-[13px]">실패를 성장의 일부로 받아들이는 사람</div>
+        <div class="card p-4 text-[13px]">팀의 성장을 자기 일처럼 기뻐하는 사람</div>
+        <div class="card p-4 text-[13px]">이력보다 태도로 신뢰를 쌓는 사람</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPLY -->
+  <section id="apply" class="mx-auto max-w-[72rem] px-4 py-10">
+    <div class="rounded-2xl bg-gray-900 text-white p-7 md:p-8">
+      <div class="text-[10px] uppercase tracking-widest opacity-80">MAKE YOUR MOVE</div>
+      <h3 class="mt-2 text-[18px] md:text-[20px] font-extrabold leading-snug">안정은 없습니다. 하지만 진짜 실전이 있습니다.</h3>
+      <p class="mt-2 text-gray-300 leading-relaxed text-[13px] md:text-[14px]">
+        지금 이 무대에서 당신의 실행이 곧 우리의 생존이자, 당신 커리어의 성장입니다.  
+        끝까지 해내며 함께 살아남을 동료, 바로 당신입니다.
+      </p>
+      <div class="mt-4">
+        <a href="https://curators.career.greetinghr.com/ko/recruit" 
+           target="_blank"
+           class="inline-flex items-center justify-center rounded-2xl h-10 px-5 bg-white text-gray-900 hover:bg-white/90 text-[13px]">
+          그리팅에서 지원하기 →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t">
+    <div class="mx-auto max-w-[72rem] px-4 py-7 text-[12px] md:text-[13px] text-gray-500 flex flex-col md:flex-row items-center gap-2 md:justify-between">
+      <div>© <span id="y"></span> Curators Inc. All rights reserved.</div>
+      <div class="flex items-center gap-4">
+        <span>서울 서초구 반포대로21길 49</span>
+        <span>채용 문의: bada_yp@eatssports.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // 연도 자동
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // 페이지 로드 페이드인
+    window.addEventListener("load", () => document.body.classList.add("loaded"));
+
+    // 🔸 활성 탭 표시
+    const links = document.querySelectorAll(".nav-link");
+    const current = window.location.href;
+
+    links.forEach(link => {
+      if (current.includes(link.getAttribute("data-tab"))) {
+        link.dataset.active = "true";
+      } else if (!link.getAttribute("data-tab") && current.includes("#values")) {
+        link.dataset.active = "true";
+      }
+    });
+
+    // 🔸 외부 링크 클릭 시 부드러운 페이드아웃
+    links.forEach(link => {
+      link.addEventListener("click", e => {
+        if (link.target === "_blank") {
+          document.body.classList.add("fade-out");
+          setTimeout(() => window.open(link.href, "_blank"), 250);
+          e.preventDefault();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
