@@ -47,8 +47,8 @@
   <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
     <div class="mx-auto max-w-[72rem] px-4 py-2.5 flex items-center justify-between">
       <div class="flex items-center gap-2">
-        <div class="h-7 w-7 rounded-xl bg-black"></div>
-        <span class="font-bold tracking-tight text-[15px]">CURATORS</span>
+        <!-- 검은 사각형 대신 로고 이미지로 교체 -->
+        <img src="logo_03_black.png" alt="CURATORS 로고" class="h-5 w-auto select-none" />
       </div>
       <nav class="hidden md:flex items-center gap-6 text-[13px]">
         <a href="#roles" class="hover:opacity-80">모집 포지션</a>
@@ -203,11 +203,12 @@
     <div class="card mt-4 p-5 md:p-6">
       <div class="text-[17px] md:text-[18px] font-semibold">CEO Staff 인턴</div>
 
-      <div class="mt-4 grid md:grid-cols-3 gap-6 text-[13px] text-gray-700">
+      <!-- 가독성 높인 레이아웃: 글자 크게, 여백 넉넉하게, line-height 조정 -->
+      <div class="mt-4 grid md:grid-cols-3 gap-8 text-[14px] text-gray-800 leading-relaxed">
         <!-- COL 1: 이 포지션이 중요한 이유 -->
         <div>
-          <div class="font-semibold">이 포지션이 중요한 이유</div>
-          <ul class="mt-2 space-y-2 list-disc pl-4">
+          <div class="font-semibold mb-2">이 포지션이 중요한 이유</div>
+          <ul class="space-y-2.5 list-disc pl-4">
             <li>CEO Staff는 경영진과 함께 전략을 기획하고 실행하는 핵심적인 역할을 합니다.</li>
             <li>급성장하는 스타트업에서 경영, 기획, 운영을 직접 경험할 수 있는 기회입니다.</li>
             <li>다양한 프로젝트를 기획하고 주도하며, 조직의 성장과 함께 비즈니스 감각을 키울 수 있습니다.</li>
@@ -216,44 +217,43 @@
 
         <!-- COL 2: 주요 업무 + 자격 요건 -->
         <div>
-          <div class="font-semibold">주요 업무</div>
-          <ul class="mt-2 space-y-2 list-disc pl-4">
+          <div class="font-semibold mb-2">주요 업무</div>
+          <ul class="space-y-2.5 list-disc pl-4">
             <li>
               CEO 및 경영진 의사결정 지원
-              <span class="block ml-5 text-gray-600">시장 조사, 데이터 분석, 보고서 작성 등</span>
+              <span class="block ml-5 text-[13px] text-gray-600">
+                시장 조사, 데이터 분석, 보고서 작성 등
+              </span>
             </li>
             <li>
               전략 기획 및 운영 업무 보조
-              <span class="block ml-5 text-gray-600">비즈니스 모델 분석, 성장 전략 수립 등</span>
+              <span class="block ml-5 text-[13px] text-gray-600">
+                비즈니스 모델 분석, 성장 전략 수립 등
+              </span>
             </li>
             <li>주요 프로젝트 진행 및 업무 프로세스 최적화</li>
           </ul>
 
-          <div class="mt-5 font-semibold">자격 요건</div>
-          <ul class="mt-2 space-y-2 list-disc pl-4">
+          <div class="mt-6 font-semibold mb-2">자격 요건</div>
+          <ul class="space-y-2 list-disc pl-4">
             <li>빠르게 변화하는 환경에서 문제 해결 역량과 실행력을 갖춘 분</li>
             <li>논리적 사고와 데이터 분석 능력을 갖춘 분</li>
           </ul>
         </div>
 
-        <!-- COL 3: 근무 조건 + 버튼 -->
+        <!-- COL 3: 근무 조건 -->
         <div class="flex flex-col gap-4">
           <div class="rounded-xl border p-4 bg-gray-50">
             <div class="text-[13px] font-semibold">근무 조건</div>
-            <ul class="mt-2 space-y-1 list-disc pl-4">
+            <ul class="mt-2 space-y-1.5 list-disc pl-4 text-[13px] text-gray-700 leading-relaxed">
               <li>근무 형태: 인턴 (3개월, 평가에 따라 정규직 전환 검토)</li>
+              <li>근무 기간 동안 성과 및 적합도에 따라 정규직 채용 여부 결정</li>
               <li>주 5일 · 09:00~10:00 사이 자율 출근제 운영</li>
               <li>주소: 서울 서초구 반포대로21길 49, 2층</li>
               <li>급여: 회사 내규 (면접 후 결정)</li>
             </ul>
           </div>
-
-          <a
-            href="https://curators.career.greetinghr.com/ko/o/123236"
-            target="_blank" rel="noreferrer"
-            class="inline-flex items-center justify-center rounded-2xl h-10 w-full bg-black text-white text-[14px]">
-            이 포지션 지원하기
-          </a>
+          <!-- 요청에 따라 '이 포지션 지원하기' 버튼 제거 -->
         </div>
       </div>
     </div>
@@ -306,6 +306,7 @@
     <ul class="mt-5 text-[13px] text-gray-600 list-disc pl-4 leading-relaxed">
       <li>지원자의 경력과 배경에 따라 일부 과정이 생략되거나 간소화될 수 있습니다.</li>
       <li>지원서에 기재된 내용이 사실과 다를 경우, 합격 또는 입사가 취소될 수 있습니다.</li>
+      <li>지원 방법: <strong>bada_yp@eatssports.com</strong> 으로 자유 양식의 지원서를 보내주세요.</li>
     </ul>
   </section>
 
