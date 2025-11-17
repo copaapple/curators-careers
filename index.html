@@ -47,8 +47,9 @@
   <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
     <div class="mx-auto max-w-[72rem] px-4 py-2.5 flex items-center justify-between">
       <div class="flex items-center gap-2">
-        <!-- ❗ 여기 src 경로에 업로드한 로고 파일명 맞춰주면 됨 -->
-        <img src="logo_03_black.png" alt="" class="h-6 w-auto select-none" />
+        <!-- 🔹 검은 동그라미 대신 로고 이미지 -->
+        <!-- 로고 파일을 index.html과 같은 폴더에 두고 파일명을 맞춰줘 -->
+        <img src="./logo_03_black.png" alt="CURATORS 로고" class="h-6 w-auto select-none" />
         <span class="font-bold tracking-tight text-[15px]">CURATORS</span>
       </div>
       <nav class="hidden md:flex items-center gap-6 text-[13px]">
@@ -204,10 +205,11 @@
     <div class="card mt-4 p-5 md:p-6">
       <div class="text-[17px] md:text-[18px] font-semibold">CEO Staff 인턴</div>
 
-      <!-- 가독성 개선: 전체 폰트 13px, 여백/라인 간격 통일 -->
-      <div class="mt-4 grid md:grid-cols-3 gap-6 text-[13px] text-gray-800 leading-relaxed">
+      <!-- 🔹 CEO Staff 블록 가독성 개선 -->
+      <!-- 1) column 사이 간격(gap-8) 늘리고 2) 각 컬럼 최대 너비 제한해서 줄 길이 짧게  -->
+      <div class="mt-4 grid md:grid-cols-3 gap-8 text-[13px] text-gray-800 leading-relaxed">
         <!-- COL 1: 이 포지션이 중요한 이유 -->
-        <div>
+        <div class="max-w-[22rem]">
           <div class="font-semibold mb-2">이 포지션이 중요한 이유</div>
           <ul class="space-y-2 list-disc pl-4">
             <li>CEO Staff는 경영진과 함께 전략을 기획하고 실행하는 핵심적인 역할을 합니다.</li>
@@ -217,7 +219,7 @@
         </div>
 
         <!-- COL 2: 주요 업무 + 자격 요건 -->
-        <div>
+        <div class="max-w-[22rem]">
           <div class="font-semibold mb-2">주요 업무</div>
           <ul class="space-y-2 list-disc pl-4">
             <li>
@@ -242,8 +244,8 @@
           </ul>
         </div>
 
-        <!-- COL 3: 근무 조건 + 지원 방법 -->
-        <div class="flex flex-col gap-4">
+        <!-- COL 3: 근무 조건 + 지원 방법 카드 -->
+        <div class="max-w-[22rem] flex flex-col gap-4">
           <div class="rounded-xl border p-4 bg-gray-50">
             <div class="text-[13px] font-semibold">근무 조건</div>
             <ul class="mt-2 space-y-1.5 list-disc pl-4 text-[13px] text-gray-700 leading-relaxed">
@@ -252,10 +254,16 @@
               <li>주 5일 · 09:00~10:00 사이 자율 출근제 운영</li>
               <li>주소: 서울 서초구 반포대로21길 49, 2층</li>
               <li>급여: 회사 내규 (면접 후 결정)</li>
-              <li>지원 방법: <strong>bada_yp@eatssports.com</strong> 으로 자유 양식의 지원서를 보내주세요.</li>
             </ul>
           </div>
-          <!-- 이 포지션 지원하기 버튼 삭제 -->
+
+          <!-- 🔹 근무 조건과 같은 양식의 '지원 방법' 카드 -->
+          <div class="rounded-xl border p-4 bg-gray-50">
+            <div class="text-[13px] font-semibold">지원 방법</div>
+            <p class="mt-2 text-[13px] text-gray-700 leading-relaxed">
+              bada_yp@eatssports.com 으로 자유 양식의 지원서를 보내주세요.
+            </p>
+          </div>
         </div>
       </div>
     </div>
