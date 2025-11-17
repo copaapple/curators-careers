@@ -48,8 +48,8 @@
   <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
     <div class="mx-auto max-w-[72rem] px-4 py-2.5 flex items-center justify-between">
       <div class="flex items-center gap-2">
-        <!-- 로고 (파일을 동일 폴더에 두기!) -->
-        <img src="./logo_03_black.png" class="h-6 w-auto select-none" alt="CURATORS 로고">
+        <!-- 로고: index.html과 같은 폴더에 logo_03_black.png 업로드 필요 -->
+        <img src="./logo_03_black.png" class="h-6 w-auto select-none" alt="">
         <span class="font-bold tracking-tight text-[15px]">CURATORS</span>
       </div>
       <nav class="hidden md:flex items-center gap-6 text-[13px]">
@@ -68,7 +68,8 @@
   <section class="relative overflow-hidden">
     <div class="absolute inset-0 -z-10 bg-gradient-to-b from-gray-50 via-white to-white"></div>
 
-    <div class="mx-auto max-w-[72rem] px-4 pt-8 md:pt-10 pb-10 md:pb-12 grid md:grid-cols-12 gap-7 items-end">
+    <!-- 여기 items-start 로 수정해서 위 여백 제거 -->
+    <div class="mx-auto max-w-[72rem] px-4 pt-8 md:pt-10 pb-10 md:pb-12 grid md:grid-cols-12 gap-7 items-start">
       <!-- LEFT -->
       <div class="md:col-span-8 flex flex-col items-start">
 
@@ -179,7 +180,6 @@
     </div>
   </section>
 
-
   <!-- ROLES -->
   <section id="roles" class="mx-auto max-w-[72rem] px-4 py-9">
     <div class="flex items-end justify-between">
@@ -188,10 +188,8 @@
     </div>
 
     <div class="card mt-4 p-6">
-
       <div class="text-[17px] md:text-[18px] font-semibold">CEO Staff 인턴</div>
 
-      <!-- CEO STAFF BLOCK -->
       <div class="mt-4 grid md:grid-cols-3 gap-8 text-[13px] text-gray-800 leading-relaxed">
 
         <!-- WHY IMPORTANT -->
@@ -209,11 +207,11 @@
           <div class="font-semibold mb-2">주요 업무</div>
           <ul class="list-disc space-y-2 pl-4">
             <li>
-              CEO 및 경영진 의사결정 지원  
+              CEO 및 경영진 의사결정 지원
               <span class="block ml-5 text-gray-600">시장 조사, 데이터 분석, 보고서 작성 등</span>
             </li>
             <li>
-              전략 기획 및 운영 업무 보조  
+              전략 기획 및 운영 업무 보조
               <span class="block ml-5 text-gray-600">비즈니스 모델 분석, 성장 전략 수립 등</span>
             </li>
             <li>주요 프로젝트 진행 및 업무 프로세스 최적화</li>
@@ -246,11 +244,8 @@
           </div>
         </div>
       </div>
-
     </div>
-
   </section>
-
 
   <!-- BENEFITS -->
   <section id="benefits" class="mx-auto max-w-[72rem] px-4 py-9">
@@ -306,7 +301,6 @@
     </ul>
   </section>
 
-
   <!-- APPLY BANNER -->
   <section id="apply" class="mx-auto max-w-[72rem] px-4 py-10">
     <div class="rounded-2xl bg-gray-900 text-white p-7">
@@ -321,7 +315,6 @@
       <p class="mt-4 font-semibold text-[15px] text-white/90">함께 증명하세요.</p>
     </div>
   </section>
-
 
   <!-- FOOTER -->
   <footer class="border-t">
