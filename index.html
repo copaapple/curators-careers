@@ -47,9 +47,10 @@
   <!-- HEADER -->
   <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
     <div class="mx-auto max-w-[72rem] px-4 py-2.5 flex items-center justify-between">
-      <div class="flex items-center">
-        <img 
-          src="./로고-블랙.png"   <!-- 파일명 맞춰서 변경 -->
+      <div class="flex items-center gap-2">
+        <!-- ✅ 로고 이미지: 파일 이름에 맞게 src만 수정하면 됨 -->
+        <img
+          src="./curators-logo.png"
           alt="Curators Logo"
           class="h-6 md:h-7 w-auto object-contain select-none"
         />
@@ -200,13 +201,17 @@
     </div>
   </section>
 
-  <!-- VALUES -->
+  <!-- VALUES: 제목 밖으로 분리 -->
   <section id="values" class="mx-auto max-w-[72rem] px-4 py-8">
-    <div class="rounded-2xl border bg-gray-50 p-6 md:p-7">
-      <h3 class="text-[18px] md:text-[20px] font-extrabold">우리가 원하는 동료</h3>
-      <p class="mt-1.5 text-[13px] text-gray-600">함께 끝까지 실행하는 동료를 찾습니다.</p>
+    <h3 class="text-[18px] md:text-[20px] font-extrabold tracking-tight">
+      우리가 원하는 동료
+    </h3>
+    <p class="mt-1.5 text-[13px] text-gray-600">
+      함께 끝까지 실행하는 동료를 찾습니다.
+    </p>
 
-      <div class="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+    <div class="mt-4 rounded-2xl border bg-gray-50 p-6 md:p-7">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
         <div class="card p-4 text-[13px]">화려함보다 진심으로 실행하는 사람</div>
         <div class="card p-4 text-[13px]">결과를 끝까지 완성하는 책임감</div>
         <div class="card p-4 text-[13px]">문제를 외면하지 않고 스스로 해법을 찾는 사람</div>
@@ -220,7 +225,7 @@
   <!-- ROLES (CEO Staff 인턴) -->
   <section id="roles" class="mx-auto max-w-[72rem] px-4 py-9">
     <div class="flex items-end justify-between">
-      <h3 class="text-[18px] md:text-[20px] font-extrabold">모집 포지션</h3>
+      <h3 class="text-[18px] md:text-[20px] font-extrabold tracking-tight">모집 포지션</h3>
       <a href="#apply" class="text-[13px] hover:opacity-80">지원 안내 →</a>
     </div>
 
@@ -284,12 +289,14 @@
     </div>
   </section>
 
-  <!-- BENEFITS -->
+  <!-- BENEFITS: 제목 밖으로 분리 -->
   <section id="benefits" class="mx-auto max-w-[72rem] px-4 py-9">
-    <div class="rounded-2xl border p-6 bg-white">
-      <h3 class="text-[18px] md:text-[20px] font-extrabold">복리후생</h3>
+    <h3 class="text-[18px] md:text-[20px] font-extrabold tracking-tight">
+      복리후생
+    </h3>
 
-      <div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-[13px]">
+    <div class="mt-4 rounded-2xl border p-6 md:p-7 bg-white">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-[13px]">
         <div class="card p-4">자유로운 근무 환경</div>
         <div class="card p-4">리프레시 휴가</div>
         <div class="card p-4">임직원 자사몰 할인</div>
@@ -302,7 +309,7 @@
 
   <!-- PROCESS -->
   <section id="process" class="mx-auto max-w-[72rem] px-4 py-9">
-    <h3 class="text-[18px] md:text-[20px] font-extrabold">전형 절차</h3>
+    <h3 class="text-[18px] md:text-[20px] font-extrabold tracking-tight">전형 절차</h3>
 
     <div class="mt-4 grid md:grid-cols-5 gap-3">
       <div class="rounded-xl border p-4">
@@ -357,7 +364,7 @@
 
   <!-- FOOTER -->
   <footer class="border-t">
-    <div class="mx-auto max-w-[72rem] px-4 py-7 text-[12px] text-gray-500 flex flex-col md:flex-row justify-between">
+    <div class="mx-auto max-w-[72rem] px-4 py-7 text-[12px] text-gray-500 flex flex-col md:flex-row justify-between gap-2">
       <span>© <span id="y"></span> Curators Inc. All rights reserved.</span>
       <span>서울 서초구 반포대로21길 49 · bada_yp@eatssports.com</span>
     </div>
