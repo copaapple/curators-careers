@@ -1,380 +1,199 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CURATORS 채용 – 지금은 생존 모드입니다</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curators Careers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-  <!-- 메타 -->
-  <meta name="description" content="큐레이터스는 생존형 D2C 브랜드를 만드는 팀입니다. 안정이 아닌 진행형. 끝까지 실행하며 곡선을 다시 그릴 동료를 찾습니다.">
-  <meta property="og:title" content="CURATORS 채용 – 지금은 생존 모드입니다">
-  <meta property="og:description" content="큐레이터스는 생존형 D2C 브랜드를 만드는 팀입니다. 안정이 아닌 진행형. 끝까지 실행하며 곡선을 다시 그릴 동료를 찾습니다.">
-  <meta property="og:type" content="website">
-  <meta name="theme-color" content="#111827">
+  <body class="min-h-screen bg-white text-gray-900 antialiased break-keep">
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- HEADER -->
+    <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b py-3">
+      <div class="mx-auto max-w-[72rem] px-4 py-2.5 flex items-center justify-between">
 
-  <!-- Pretendard 폰트 -->
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
-
-  <style>
-    body {
-      font-family: "Pretendard Variable","Pretendard",
-      -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
-      "Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",
-      "Helvetica Neue",Arial,sans-serif;
-    }
-    .shadow-soft { box-shadow: 0 10px 30px rgba(0,0,0,.04); }
-    .card { border-radius: 1rem; border:1px solid rgba(17,24,39,.06); background:#fff; }
-
-    @keyframes pulse-red-tiny {
-      0%, 100% { background-color:#ef4444; box-shadow:0 0 0 0 rgba(239,68,68,.30); }
-      50%      { background-color:#f87171; box-shadow:0 0 3px 2px rgba(239,68,68,.20); }
-    }
-    .pulse-light { animation:pulse-red-tiny 1s infinite; }
-    @media (prefers-reduced-motion: reduce) {
-      .pulse-light { animation:none; background-color:#ef4444; box-shadow:none; }
-    }
-
-    .left-rail { width: 100%; }
-  </style>
-</head>
-
-<body class="min-h-screen bg-white text-gray-900 antialiased break-keep">
-
-  <!-- HEADER -->
-  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
-    <div class="mx-auto max-w-[72rem] px-4 py-2.5 flex items-center justify-between">
-      <div class="flex items-center gap-2">
-        <!-- ✅ 로고: index.html과 같은 위치에 curators-logo.png 저장 -->
-        <img
-          src="./로고-블랙.jpg"
-          alt="Curators"
-          class="h-20 w-auto object-contain select-none"
-        />
-      </div>
-      <nav class="hidden md:flex items-center gap-6 text-[13px]">
-        <a href="#roles" class="hover:opacity-80">모집 포지션</a>
-        <a href="#benefits" class="hover:opacity-80">복리후생</a>
-        <a href="#process" class="hover:opacity-80">전형 절차</a>
-      </nav>
-      <a href="https://curators.career.greetinghr.com/ko/recruit" target="_blank" rel="noreferrer"
-         class="inline-flex items-center justify-center px-3.5 h-9 rounded-2xl bg-black text-white text-[12px] font-medium">
-        지금 지원하기
-      </a>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="relative overflow-hidden">
-    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-gray-50 via-white to-white"></div>
-
-    <div class="mx-auto max-w-[72rem] px-4 pt-8 md:pt-10 pb-10 md:pb-12 grid md:grid-cols-12 gap-7 items-start">
-      <!-- LEFT -->
-      <div class="md:col-span-8 flex flex-col items-start">
-
-        <!-- 배지 -->
-        <div class="inline-flex items-center gap-2 rounded-full border px-3.5 py-1.5 text-[14px] font-semibold">
-          <span class="inline-flex h-[9px] w-[9px] rounded-full pulse-light"></span>
-          지금은 생존 모드입니다
+        <div class="flex items-center gap-2">
+          <img
+            src="./로고-블랙.jpg"
+            alt="Curators Logo"
+            class="h-8 w-auto object-contain select-none"
+          />
         </div>
 
-        <!-- 타이틀 -->
-        <h1 class="mt-3 text-[30px] sm:text-[34px] lg:text-[36px] font-extrabold leading-snug tracking-tight">
-          우리는 아직 완성되지 않았습니다.<br class="hidden sm:block">
-          매일 흔들리지만, 생존을 넘어<br class="hidden sm:block">
-          <span class="underline decoration-4 decoration-black underline-offset-4 whitespace-nowrap">새로운 성장 곡선을</span> 그리고 있습니다.
+        <nav class="hidden md:flex items-center gap-6 text-[13px]">
+          <a href="#roles" class="hover:opacity-80">모집 포지션</a>
+          <a href="#benefits" class="hover:opacity-80">복리후생</a>
+          <a href="#process" class="hover:opacity-80">전형 절차</a>
+        </nav>
+
+        <a
+          href="https://curators.career.greetinghr.com/ko/recruit"
+          target="_blank"
+          rel="noreferrer"
+          class="inline-flex items-center justify-center px-3.5 h-9 rounded-2xl bg-black text-white text-[12px] font-medium"
+        >
+          지금 지원하기
+        </a>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="mx-auto max-w-[72rem] px-4 py-16">
+
+      <!-- 생존 모드 배지 -->
+      <div class="mb-4">
+        <span class="inline-flex items-center px-3 py-1.5 rounded-full text-[13px] bg-red-50 text-red-500">
+          🔴 지금은 생존 모드입니다
+        </span>
+      </div>
+
+      <!-- 헤더 섹션 -->
+      <section class="mb-16">
+        <h1 class="text-3xl md:text-4xl font-bold leading-snug">
+          우리는 아직 완성되지 않았습니다.<br />
+          매일 흔들리지만, 생존을 넘어<br />
+          새로운 성장 곡선을 그리고 있습니다.
         </h1>
 
-        <p class="mt-3 text-[15px] text-gray-700 leading-relaxed">
-          안정은 없지만 실전의 자리는 분명합니다. 답을 직접 만드는 동료를 기다립니다.
-        </p>
-        <p class="mt-2 text-[15px] text-gray-600 leading-relaxed">
+        <p class="text-gray-600 text-[15px] mt-4">
+          안정은 없지만 실적의 자리는 분명합니다. 답을 직접 만드는 동료를 기다립니다.<br />
           헬스&뷰티 브랜드를 직접 기획·운영하는 미디어커머스 팀, 큐레이터스.
         </p>
+      </section>
 
-        <!-- 숫자 카드 3개 -->
-        <div class="left-rail mt-5">
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <div class="rounded-2xl border bg-white shadow-soft p-6 flex flex-col items-center text-center">
-              <div class="text-gray-500 text-[14px] font-medium">매출</div>
-              <div class="mt-1.5 text-[24px] font-extrabold">120억</div>
-              <div class="text-[14px] text-gray-600">도약 중입니다.</div>
+      <!-- 지표 카드 -->
+      <section class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-20">
+        <div class="border rounded-2xl p-6">
+          <p class="text-gray-500 text-sm">매출</p>
+          <p class="text-2xl font-bold mt-1">120억</p>
+          <p class="text-gray-500 text-sm">도약 중입니다.</p>
+        </div>
+        <div class="border rounded-2xl p-6">
+          <p class="text-gray-500 text-sm">성장률</p>
+          <p class="text-2xl font-bold mt-1">80%</p>
+          <p class="text-gray-500 text-sm">멈추지 않습니다.</p>
+        </div>
+        <div class="border rounded-2xl p-6">
+          <p class="text-gray-500 text-sm">누적 판매</p>
+          <p class="text-2xl font-bold mt-1">150만개</p>
+          <p class="text-gray-500 text-sm">기록을 이어갑니다.</p>
+        </div>
+      </section>
+
+      <!-- 진행형의 현장 -->
+      <section class="mb-20">
+        <h2 class="font-bold text-lg mb-2">여기는 진행형의 현장입니다</h2>
+        <p class="text-[15px] text-gray-600 mb-6 leading-relaxed">
+          아이디어를 바로 실행하고, 데이터를 보고, 곧바로 다음 버전을 만듭니다.
+          실행→피드백→반복 루프로 속도를 유지하고,
+          모든 결과물은 지표/매출과 직접 연결됩니다.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="border rounded-xl p-5">🚀 <strong>속도와 실행</strong><br>아이디어는 바로 실행, 결과는 데이터로 검증합니다.</div>
+          <div class="border rounded-xl p-5">📈 <strong>지표로 증명</strong><br>당신의 실행이 실제 성과로 이어집니다.</div>
+          <div class="border rounded-xl p-5">🛠️ <strong>끊김 없이 개선</strong><br>실패를 두려워하지 않고 매번 버전업합니다.</div>
+          <div class="border rounded-xl p-5">🤝 <strong>함께 밀어붙인다</strong><br>서로의 실행을 끝까지 완성시킵니다.</div>
+        </div>
+      </section>
+
+      <!-- 우리가 원하는 동료 -->
+      <section id="roles" class="mb-20">
+        <h2 class="font-bold text-xl mb-3">우리가 원하는 동료</h2>
+        <p class="text-gray-600 text-[15px] mb-6">함께 끝까지 실행하는 동료를 찾습니다.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="border rounded-2xl p-5">화려함보다 진심으로 실행하는 사람</div>
+          <div class="border rounded-2xl p-5">결과를 끝까지 완성하는 책임감</div>
+          <div class="border rounded-2xl p-5">문제를 외면하지 않고 스스로 해결을 찾는 사람</div>
+          <div class="border rounded-2xl p-5">실패를 성장의 일부로 받아들이는 사람</div>
+          <div class="border rounded-2xl p-5">팀의 성장을 자기 일처럼 기뻐하는 사람</div>
+          <div class="border rounded-2xl p-5">이력보다 태도로 신뢰를 쌓는 사람</div>
+        </div>
+      </section>
+
+      <!-- 모집 포지션 -->
+      <section class="mb-20">
+        <h2 class="font-bold text-xl mb-6">모집 포지션</h2>
+
+        <div class="border rounded-2xl p-8">
+          <h3 class="text-lg font-semibold mb-4">CEO Staff 인턴</h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- 중요 이유 -->
+            <div>
+              <h4 class="font-bold mb-3">이 포지션이 중요한 이유</h4>
+              <ul class="space-y-2 text-[15px] text-gray-700 leading-relaxed">
+                <li>CEO Staff는 경영진과 함께 전략을 기획하고 실행하는 핵심직원 역할을 합니다.</li>
+                <li>급성장하는 스타트업에서 경영, 기획, 운영을 직접 경험할 수 있는 기회입니다.</li>
+                <li>다양한 프로젝트를 기획하고 주도하며, 조직의 성장과 함께 비즈니스 감각을 키울 수 있습니다.</li>
+              </ul>
             </div>
-            <div class="rounded-2xl border bg-white shadow-soft p-6 flex flex-col items-center text-center">
-              <div class="text-gray-500 text-[14px] font-medium">성장률</div>
-              <div class="mt-1.5 text-[24px] font-extrabold">80%</div>
-              <div class="text-[14px] text-gray-600">멈추지 않습니다.</div>
+
+            <!-- 주요 업무 -->
+            <div>
+              <h4 class="font-bold mb-3">주요 업무</h4>
+              <ul class="space-y-2 text-[15px] text-gray-700 leading-relaxed">
+                <li>CEO 및 경영진 의사결정 지원<br />시장 조사, 데이터 분석, 보고서 작성 등</li>
+                <li>전략 기획 및 운영 업무 보조<br />비즈니스 모델 분석, 성장 전략 수립 등</li>
+                <li>주요 프로젝트 진행 및 업무 프로세스 최적화</li>
+              </ul>
             </div>
-            <div class="rounded-2xl border bg-white shadow-soft p-6 flex flex-col items-center text-center">
-              <div class="text-gray-500 text-[14px] font-medium">누적 판매</div>
-              <div class="mt-1.5 text-[24px] font-extrabold">150만개</div>
-              <div class="text-[14px] text-gray-600">기록을 이어갑니다.</div>
+
+            <!-- 근무 조건 -->
+            <div>
+              <h4 class="font-bold mb-3">근무 조건</h4>
+              <ul class="space-y-2 text-[15px] text-gray-700 leading-relaxed">
+                <li>근무 형태: 인턴 (3개월, 평가에 따라 정규직 전환 검토)</li>
+                <li>주 5일 · 09:00~10:00 사이 자율 출근제 운영</li>
+                <li>주소: 서울 서초구 반포대로21길 49, 2층</li>
+                <li>급여: 회사 내규 (면접 후 결정)</li>
+              </ul>
+
+              <h4 class="font-bold mt-6 mb-1">지원 방법</h4>
+              <p class="text-[15px] leading-relaxed">
+                <strong>bada_yp@eatssports.com</strong> 으로 자유 양식의 지원서를 보내주세요.
+              </p>
             </div>
+
           </div>
         </div>
+      </section>
 
-        <!-- 진행형 현장 박스 -->
-        <div class="left-rail mt-5">
-          <div class="rounded-2xl border bg-gray-50 shadow-soft p-6">
-            <h2 class="text-[18px] md:text-[20px] font-extrabold">여기는 진행형의 현장입니다</h2>
-            <p class="mt-2.5 text-[15px] text-gray-600 leading-relaxed">
-              아이디어를 바로 실행하고, 데이터를 보고, 곧바로 다음 버전을 만듭니다.
-              실행→피드백→반복 루프로 속도를 유지하고, 모든 결과물은 지표/매출과 직접 연결됩니다.
-            </p>
-          </div>
+      <!-- 복리후생 -->
+      <section id="benefits" class="mb-20">
+        <h2 class="font-bold text-xl mb-3">복리후생</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="border rounded-2xl p-5">자유로운 근무 환경</div>
+          <div class="border rounded-2xl p-5">리프레시 휴가</div>
+          <div class="border rounded-2xl p-5">임직원 자사몰 할인</div>
+          <div class="border rounded-2xl p-5">성과 기반 인센티브</div>
+          <div class="border rounded-2xl p-5">장기근속 포상</div>
+          <div class="border rounded-2xl p-5">교육 및 최고의 장비 제공</div>
+        </div>
+      </section>
+
+      <!-- 전형 절차 -->
+      <section id="process" class="mb-32">
+        <h2 class="font-bold text-xl mb-6">전형 절차</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+          <div class="border rounded-xl p-5">STEP 1<br><strong>서류 전형 (포트폴리오 포함)</strong></div>
+          <div class="border rounded-xl p-5">STEP 2<br><strong>대면 인터뷰</strong></div>
+          <div class="border rounded-xl p-5">STEP 3<br><strong>추가 인터뷰</strong><br><span class="text-[13px] text-gray-500">* 필요 시 진행</span></div>
+          <div class="border rounded-xl p-5">STEP 4<br><strong>처우 협의</strong></div>
+          <div class="border rounded-xl p-5">STEP 5<br><strong>오퍼레터 및 합격</strong></div>
         </div>
 
-        <!-- 네 개 카드 -->
-        <div class="left-rail mt-3">
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <div class="rounded-2xl border p-5 bg-white min-h-[120px] flex flex-col justify-center">
-              <div class="flex items-center gap-2">
-                <span class="text-[16px]">🚀</span>
-                <div class="font-semibold text-[14px] md:text-[15px]">속도와 실험</div>
-              </div>
-              <p class="mt-2 text-[13px] text-gray-600">아이디어는 바로 실행, 결과는 데이터로 검증합니다.</p>
-            </div>
-            <div class="rounded-2xl border p-5 bg-white min-h-[120px] flex flex-col justify-center">
-              <div class="flex items-center gap-2">
-                <span class="text-[16px]">🎯</span>
-                <div class="font-semibold text-[14px] md:text-[15px]">지표로 증명</div>
-              </div>
-              <p class="mt-2 text-[13px] text-gray-600">당신의 실행이 실제 성과로 이어집니다.</p>
-            </div>
-            <div class="rounded-2xl border p-5 bg-white min-h-[120px] flex flex-col justify-center">
-              <div class="flex items-center gap-2">
-                <span class="text-[16px]">🧗</span>
-                <div class="font-semibold text-[14px] md:text-[15px]">끈질긴 개선</div>
-              </div>
-              <p class="mt-2 text-[13px] text-gray-600">실패를 복기하고 더 나은 버전으로 반복합니다.</p>
-            </div>
-            <div class="rounded-2xl border p-5 bg-white min-h-[120px] flex flex-col justify-center">
-              <div class="flex items-center gap-2">
-                <span class="text-[16px]">🧑‍🤝‍🧑</span>
-                <div class="font-semibold text-[14px] md:text-[15px]">함께 밀어붙인다</div>
-              </div>
-              <p class="mt-2 text-[13px] text-gray-600">서로의 실행을 끝까지 완성시킵니다.</p>
-            </div>
-          </div>
-        </div>
+        <p class="text-gray-500 text-[14px] mt-4 leading-relaxed">
+          • 지원자의 경력과 배경에 따라 일부 과정이 생략되거나 간소화될 수 있습니다.<br />
+          • 지원서에 기재된 내용이 사실과 다를 경우, 합격 또는 입사가 취소될 수 있습니다.
+        </p>
+      </section>
 
-      </div>
-
-      <!-- RIGHT: 브랜드 카드 3개 -->
-      <div class="md:col-span-4 flex flex-col">
-        <div class="block mt-[6px]">
-          <div class="h-[240px] w-full overflow-hidden rounded-2xl shadow-soft">
-            <img src="https://opening-attachments.greetinghr.com/2025-03-19/23aee327-b46f-4a1e-8ce1-61d22aa55689/%282%29.jpg"
-                 alt="이츠스포츠" class="h-full w-full object-cover select-none" loading="lazy" referrerpolicy="no-referrer">
-          </div>
-          <div class="flex items-center justify-between mt-1.5 text-[14px] font-bold">
-            <span class="text-gray-900">이츠스포츠</span>
-            <a class="text-gray-800 hover:opacity-80" href="https://eatssports.com/" target="_blank" rel="noopener noreferrer">홈페이지 바로가기 →</a>
-          </div>
-        </div>
-
-        <div class="block mt-4">
-          <div class="h-[240px] w-full overflow-hidden rounded-2xl shadow-soft">
-            <img src="https://opening-attachments.greetinghr.com/2025-03-19/7fd03980-eb72-4c75-a5aa-026e76c39086/.jpg"
-                 alt="팜밀리 1987" class="h-full w-full object-cover select-none" loading="lazy" referrerpolicy="no-referrer">
-          </div>
-          <div class="flex items-center justify-between mt-1.5 text-[14px] font-bold">
-            <span class="text-gray-900">팜밀리 1987</span>
-            <a class="text-gray-800 hover:opacity-80" href="https://farmily1987.kr/" target="_blank" rel="noopener noreferrer">홈페이지 바로가기 →</a>
-          </div>
-        </div>
-
-        <div class="block mt-4">
-          <div class="h-[240px] w-full overflow-hidden rounded-2xl shadow-soft">
-            <img src="https://opening-attachments.greetinghr.com/2025-03-19/8bf6ad27-dad7-43f3-8820-de2eb121a902/.jpg"
-                 alt="푸디랩" class="h-full w-full object-cover select-none" loading="lazy" referrerpolicy="no-referrer">
-          </div>
-          <div class="flex items-center justify-between mt-1.5 text-[14px] font-bold">
-            <span class="text-gray-900">푸디랩</span>
-            <a class="text-gray-800 hover:opacity-80" href="https://foodylab.kr/" target="_blank" rel="noopener noreferrer">홈페이지 바로가기 →</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- VALUES: 제목 밖 / 부제는 카드 안 -->
-  <section id="values" class="mx-auto max-w-[72rem] px-4 py-8">
-    <h3 class="text-[18px] md:text-[20px] font-extrabold tracking-tight">
-      우리가 원하는 동료
-    </h3>
-
-    <div class="mt-3 rounded-2xl border bg-gray-50 p-6 md:p-7">
-      <p class="text-[13px] text-gray-600">
-        함께 끝까지 실행하는 동료를 찾습니다.
-      </p>
-
-      <div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-        <div class="card p-4 text-[13px]">화려함보다 진심으로 실행하는 사람</div>
-        <div class="card p-4 text-[13px]">결과를 끝까지 완성하는 책임감</div>
-        <div class="card p-4 text-[13px]">문제를 외면하지 않고 스스로 해법을 찾는 사람</div>
-        <div class="card p-4 text-[13px]">실패를 성장의 일부로 받아들이는 사람</div>
-        <div class="card p-4 text-[13px]">팀의 성장을 자기 일처럼 기뻐하는 사람</div>
-        <div class="card p-4 text-[13px]">이력보다 태도로 신뢰를 쌓는 사람</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ROLES (CEO Staff 인턴) -->
-  <section id="roles" class="mx-auto max-w-[72rem] px-4 py-9">
-    <div class="flex items-end justify-between">
-      <h3 class="text-[18px] md:text-[20px] font-extrabold tracking-tight">모집 포지션</h3>
-      <a href="#apply" class="text-[13px] hover:opacity-80">지원 안내 →</a>
-    </div>
-
-    <div class="card mt-4 p-6 md:p-7">
-      <div class="text-[17px] md:text-[18px] font-semibold">CEO Staff 인턴</div>
-
-      <!-- ✅ 가독성 개선: 텍스트 살짝 키우고, 간격 넉넉하게 -->
-      <div class="mt-4 grid md:grid-cols-3 gap-10 text-[13px] md:text-[14px] text-gray-800 leading-relaxed">
-
-        <!-- WHY IMPORTANT -->
-        <div class="max-w-[23rem]">
-          <div class="font-semibold mb-2">이 포지션이 중요한 이유</div>
-          <ul class="list-disc space-y-2.5 pl-4">
-            <li>CEO Staff는 경영진과 함께 전략을 기획하고 실행하는 핵심적인 역할을 합니다.</li>
-            <li>급성장하는 스타트업에서 경영, 기획, 운영을 직접 경험할 수 있는 기회입니다.</li>
-            <li>다양한 프로젝트를 기획하고 주도하며, 조직의 성장과 함께 비즈니스 감각을 키울 수 있습니다.</li>
-          </ul>
-        </div>
-
-        <!-- MAIN TASK + QUAL -->
-        <div class="max-w-[23rem]">
-          <div class="font-semibold mb-2">주요 업무</div>
-          <ul class="list-disc space-y-2.5 pl-4">
-            <li>
-              CEO 및 경영진 의사결정 지원
-              <span class="block ml-5 text-gray-600">시장 조사, 데이터 분석, 보고서 작성 등</span>
-            </li>
-            <li>
-              전략 기획 및 운영 업무 보조
-              <span class="block ml-5 text-gray-600">비즈니스 모델 분석, 성장 전략 수립 등</span>
-            </li>
-            <li>주요 프로젝트 진행 및 업무 프로세스 최적화</li>
-          </ul>
-
-          <div class="mt-5 font-semibold mb-2">자격 요건</div>
-          <ul class="list-disc space-y-2.5 pl-4">
-            <li>빠르게 변화하는 환경에서 문제 해결 역량과 실행력을 갖춘 분</li>
-            <li>논리적 사고와 데이터 분석 능력을 갖춘 분</li>
-          </ul>
-        </div>
-
-        <!-- CONDITIONS + APPLY -->
-        <div class="max-w-[23rem] flex flex-col gap-4">
-          <div class="rounded-xl border p-4 bg-gray-50">
-            <div class="font-semibold text-[13px] md:text-[14px]">근무 조건</div>
-            <ul class="mt-2 space-y-1.5 list-disc pl-4 text-[13px] md:text-[14px] leading-relaxed">
-              <li>근무 형태: 인턴 (3개월, 평가에 따라 정규직 전환 검토)</li>
-              <li>주 5일 · 09:00~10:00 사이 자율 출근제 운영</li>
-              <li>주소: 서울 서초구 반포대로21길 49, 2층</li>
-              <li>급여: 회사 내규 (면접 후 결정)</li>
-            </ul>
-          </div>
-
-          <div class="rounded-xl border p-4 bg-gray-50">
-            <div class="font-semibold text-[13px] md:text-[14px]">지원 방법</div>
-            <p class="mt-2 text-[13px] md:text-[14px] leading-relaxed">
-              <strong>bada_yp@eatssports.com</strong> 으로 자유 양식의 지원서를 보내주세요.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- BENEFITS: 카드 배경을 VALUES와 동일한 gray-50로 -->
-  <section id="benefits" class="mx-auto max-w-[72rem] px-4 py-9">
-    <h3 class="text-[18px] md:text-[20px] font-extrabold tracking-tight">
-      복리후생
-    </h3>
-
-    <div class="mt-4 rounded-2xl border p-6 md:p-7 bg-gray-50">
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-[13px]">
-        <div class="card p-4">자유로운 근무 환경</div>
-        <div class="card p-4">리프레시 휴가</div>
-        <div class="card p-4">임직원 자사몰 할인</div>
-        <div class="card p-4">성과 기반 인센티브</div>
-        <div class="card p-4">장기근속 포상</div>
-        <div class="card p-4">교육 및 최고 수준의 장비 제공</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROCESS -->
-  <section id="process" class="mx-auto max-w-[72rem] px-4 py-9">
-    <h3 class="text-[18px] md:text-[20px] font-extrabold tracking-tight">전형 절차</h3>
-
-    <div class="mt-4 grid md:grid-cols-5 gap-3">
-      <div class="rounded-xl border p-4">
-        <div class="text-[11px] text-gray-500">STEP 1</div>
-        <div class="mt-1 font-semibold text-[14px]">서류 전형 (포트폴리오 포함)</div>
-      </div>
-
-      <div class="rounded-xl border p-4">
-        <div class="text-[11px] text-gray-500">STEP 2</div>
-        <div class="mt-1 font-semibold text-[14px]">대면 인터뷰</div>
-      </div>
-
-      <div class="rounded-xl border p-4">
-        <div class="text-[11px] text-gray-500">STEP 3</div>
-        <div class="mt-1 font-semibold text-[14px]">추가 인터뷰</div>
-        <div class="text-[11px] text-gray-400">※ 필요 시 진행</div>
-      </div>
-
-      <div class="rounded-xl border p-4">
-        <div class="text-[11px] text-gray-500">STEP 4</div>
-        <div class="mt-1 font-semibold text-[14px]">처우 협의</div>
-      </div>
-
-      <div class="rounded-xl border p-4">
-        <div class="text-[11px] text-gray-500">STEP 5</div>
-        <div class="mt-1 font-semibold text-[14px]">오퍼레터 및 합격</div>
-      </div>
-    </div>
-
-    <ul class="mt-5 list-disc pl-4 text-[13px] text-gray-600 leading-relaxed">
-      <li>지원자의 경력과 배경에 따라 일부 과정이 생략되거나 간소화될 수 있습니다.</li>
-      <li>지원서에 기재된 내용이 사실과 다를 경우, 합격 또는 입사가 취소될 수 있습니다.</li>
-    </ul>
-  </section>
-
-  <!-- APPLY BANNER -->
-  <section id="apply" class="mx-auto max-w-[72rem] px-4 py-10">
-    <div class="rounded-2xl bg-gray-900 text-white p-7">
-      <div class="text-[10px] tracking-widest opacity-80 uppercase">MAKE YOUR MOVE</div>
-      <h3 class="mt-2 text-[20px] font-extrabold leading-snug">
-        완벽한 회사는 없습니다. 하지만 실행으로 증명하는 팀은 있습니다.
-      </h3>
-
-      <p class="mt-2 text-[14px] leading-relaxed text-gray-300">
-        우리는 안정 대신 도전을 택했고, 과정이 아닌 결과로 증명합니다.<br>
-        실행이 곧 생존이며, 성장의 곡선을 새로 그리는 순간이 지금입니다.
-      </p>
-
-      <p class="mt-4 font-semibold text-[15px] text-white/90">함께 증명하세요.</p>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="border-t">
-    <div class="mx-auto max-w-[72rem] px-4 py-7 text-[12px] text-gray-500 flex flex-col md:flex-row justify-between gap-2">
-      <span>© <span id="y"></span> Curators Inc. All rights reserved.</span>
-      <span>서울 서초구 반포대로21길 49 · bada_yp@eatssports.com</span>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
-
-</body>
+    </main>
+  </body>
 </html>
