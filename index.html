@@ -48,7 +48,7 @@
   <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
     <div class="mx-auto max-w-[72rem] px-4 py-2.5 flex items-center justify-between">
       <div class="flex items-center gap-2">
-        <!-- ✅ 로고 이미지: 파일 이름에 맞게 src만 수정하면 됨 -->
+        <!-- ✅ 로고: index.html과 같은 위치에 curators-logo.png 저장 -->
         <img
           src="./curators-logo.png"
           alt="Curators Logo"
@@ -201,17 +201,18 @@
     </div>
   </section>
 
-  <!-- VALUES: 제목 밖으로 분리 -->
+  <!-- VALUES: 제목 밖 / 부제는 카드 안 -->
   <section id="values" class="mx-auto max-w-[72rem] px-4 py-8">
     <h3 class="text-[18px] md:text-[20px] font-extrabold tracking-tight">
       우리가 원하는 동료
     </h3>
-    <p class="mt-1.5 text-[13px] text-gray-600">
-      함께 끝까지 실행하는 동료를 찾습니다.
-    </p>
 
-    <div class="mt-4 rounded-2xl border bg-gray-50 p-6 md:p-7">
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+    <div class="mt-3 rounded-2xl border bg-gray-50 p-6 md:p-7">
+      <p class="text-[13px] text-gray-600">
+        함께 끝까지 실행하는 동료를 찾습니다.
+      </p>
+
+      <div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
         <div class="card p-4 text-[13px]">화려함보다 진심으로 실행하는 사람</div>
         <div class="card p-4 text-[13px]">결과를 끝까지 완성하는 책임감</div>
         <div class="card p-4 text-[13px]">문제를 외면하지 않고 스스로 해법을 찾는 사람</div>
@@ -229,15 +230,16 @@
       <a href="#apply" class="text-[13px] hover:opacity-80">지원 안내 →</a>
     </div>
 
-    <div class="card mt-4 p-6">
+    <div class="card mt-4 p-6 md:p-7">
       <div class="text-[17px] md:text-[18px] font-semibold">CEO Staff 인턴</div>
 
-      <div class="mt-4 grid md:grid-cols-3 gap-8 text-[13px] text-gray-800 leading-relaxed">
+      <!-- ✅ 가독성 개선: 텍스트 살짝 키우고, 간격 넉넉하게 -->
+      <div class="mt-4 grid md:grid-cols-3 gap-10 text-[13px] md:text-[14px] text-gray-800 leading-relaxed">
 
         <!-- WHY IMPORTANT -->
-        <div class="max-w-[22rem]">
+        <div class="max-w-[23rem]">
           <div class="font-semibold mb-2">이 포지션이 중요한 이유</div>
-          <ul class="list-disc space-y-2 pl-4">
+          <ul class="list-disc space-y-2.5 pl-4">
             <li>CEO Staff는 경영진과 함께 전략을 기획하고 실행하는 핵심적인 역할을 합니다.</li>
             <li>급성장하는 스타트업에서 경영, 기획, 운영을 직접 경험할 수 있는 기회입니다.</li>
             <li>다양한 프로젝트를 기획하고 주도하며, 조직의 성장과 함께 비즈니스 감각을 키울 수 있습니다.</li>
@@ -245,9 +247,9 @@
         </div>
 
         <!-- MAIN TASK + QUAL -->
-        <div class="max-w-[22rem]">
+        <div class="max-w-[23rem]">
           <div class="font-semibold mb-2">주요 업무</div>
-          <ul class="list-disc space-y-2 pl-4">
+          <ul class="list-disc space-y-2.5 pl-4">
             <li>
               CEO 및 경영진 의사결정 지원
               <span class="block ml-5 text-gray-600">시장 조사, 데이터 분석, 보고서 작성 등</span>
@@ -260,17 +262,17 @@
           </ul>
 
           <div class="mt-5 font-semibold mb-2">자격 요건</div>
-          <ul class="list-disc space-y-2 pl-4">
+          <ul class="list-disc space-y-2.5 pl-4">
             <li>빠르게 변화하는 환경에서 문제 해결 역량과 실행력을 갖춘 분</li>
             <li>논리적 사고와 데이터 분석 능력을 갖춘 분</li>
           </ul>
         </div>
 
         <!-- CONDITIONS + APPLY -->
-        <div class="max-w-[22rem] flex flex-col gap-4">
+        <div class="max-w-[23rem] flex flex-col gap-4">
           <div class="rounded-xl border p-4 bg-gray-50">
-            <div class="font-semibold text-[13px]">근무 조건</div>
-            <ul class="mt-2 space-y-1.5 list-disc pl-4 text-[13px] leading-relaxed">
+            <div class="font-semibold text-[13px] md:text-[14px]">근무 조건</div>
+            <ul class="mt-2 space-y-1.5 list-disc pl-4 text-[13px] md:text-[14px] leading-relaxed">
               <li>근무 형태: 인턴 (3개월, 평가에 따라 정규직 전환 검토)</li>
               <li>주 5일 · 09:00~10:00 사이 자율 출근제 운영</li>
               <li>주소: 서울 서초구 반포대로21길 49, 2층</li>
@@ -279,8 +281,8 @@
           </div>
 
           <div class="rounded-xl border p-4 bg-gray-50">
-            <div class="font-semibold text-[13px]">지원 방법</div>
-            <p class="mt-2 text-[13px] leading-relaxed">
+            <div class="font-semibold text-[13px] md:text-[14px]">지원 방법</div>
+            <p class="mt-2 text-[13px] md:text-[14px] leading-relaxed">
               <strong>bada_yp@eatssports.com</strong> 으로 자유 양식의 지원서를 보내주세요.
             </p>
           </div>
@@ -289,13 +291,13 @@
     </div>
   </section>
 
-  <!-- BENEFITS: 제목 밖으로 분리 -->
+  <!-- BENEFITS: 카드 배경을 VALUES와 동일한 gray-50로 -->
   <section id="benefits" class="mx-auto max-w-[72rem] px-4 py-9">
     <h3 class="text-[18px] md:text-[20px] font-extrabold tracking-tight">
       복리후생
     </h3>
 
-    <div class="mt-4 rounded-2xl border p-6 md:p-7 bg-white">
+    <div class="mt-4 rounded-2xl border p-6 md:p-7 bg-gray-50">
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-[13px]">
         <div class="card p-4">자유로운 근무 환경</div>
         <div class="card p-4">리프레시 휴가</div>
