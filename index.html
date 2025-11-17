@@ -40,51 +40,32 @@
 
     .left-rail { width: 100%; }
   </style>
+</head>
 
-<header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
-  <div class="mx-auto max-w-[72rem] px-4 py-2.5 flex items-center justify-between">
+<body class="min-h-screen bg-white text-gray-900 antialiased break-keep">
 
-    <div class="flex items-center gap-2">
-      <img 
-        src="./로고-블랙.jpg"
-        alt="Curators Logo"
-        class="h-8 md:h-10 w-auto object-contain select-none"
-      />
+  <!-- HEADER -->
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
+    <div class="mx-auto max-w-[72rem] px-4 py-2.5 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <!-- ✅ 로고: index.html과 같은 위치에 curators-logo.png 저장 -->
+        <img
+          src="./로고-블랙.jpg"
+          alt="Curators"
+          class="h-12 w-auto object-contain select-none"
+        />
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-[13px]">
+        <a href="#roles" class="hover:opacity-80">모집 포지션</a>
+        <a href="#benefits" class="hover:opacity-80">복리후생</a>
+        <a href="#process" class="hover:opacity-80">전형 절차</a>
+      </nav>
+      <a href="https://curators.career.greetinghr.com/ko/recruit" target="_blank" rel="noreferrer"
+         class="inline-flex items-center justify-center px-3.5 h-9 rounded-2xl bg-black text-white text-[12px] font-medium">
+        지금 지원하기
+      </a>
     </div>
-
-    <nav class="hidden md:flex items-center gap-6 text-[13px]">
-      <a href="#roles" class="hover:opacity-80">모집 포지션</a>
-      <a href="#benefits" class="hover:opacity-80">복리후생</a>
-      <a href="#process" class="hover:opacity-80">전형 절차</a>
-    </nav>
-
-    <a href="https://curators.career.greethinghr.com/ko/recruit" target="_blank" rel="noreferrer"
-      class="inline-flex items-center justify-center px-3.5 h-9 rounded-2xl bg-black text-white text-[12px] font-medium">
-      지금 지원하기
-    </a>
-    
-  </div>
-</header>
-
-    <!-- 중앙 메뉴 -->
-    <nav class="hidden md:flex items-center gap-6 text-[13px]">
-      <a href="#roles" class="hover:opacity-80">모집 포지션</a>
-      <a href="#benefits" class="hover:opacity-80">복리후생</a>
-      <a href="#process" class="hover:opacity-80">전형 절차</a>
-    </nav>
-
-    <!-- 우측 버튼 -->
-    <a
-      href="https://curators.career.greetinghr.com/ko/recruit"
-      target="_blank"
-      rel="noreferrer"
-      class="inline-flex items-center justify-center px-3.5 h-9 rounded-2xl bg-black text-white text-[12px] font-medium"
-    >
-      지금 지원하기
-    </a>
-  </div>
-</header>
-
+  </header>
 
   <!-- HERO -->
   <section class="relative overflow-hidden">
